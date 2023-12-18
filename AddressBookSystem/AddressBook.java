@@ -18,9 +18,10 @@ public class AddressBook {
         contacts.remove(contact);
     }
 
-    public Contact searchContact(String id) {
+    // search contact------
+    public Contact searchContact(String name) {
         for (Contact contact : contacts) {
-            if (contact.getId().equals(id)) {
+            if (contact.getName().equals(name)) {
                 return contact;
             }
         }
